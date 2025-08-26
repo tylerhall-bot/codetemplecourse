@@ -1,0 +1,45 @@
+.first-article {
+    border: 5px solid greenyellow;
+    background-color: rgb(36, 22, 163);
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    border-radius: 20px; /* added rounded corners */
+    padding: 15px; /* added padding to make rounded corners more visible, i couldnt tell if they were rounded at first */
+  }
+  
+  .first-h2 {
+    color: yellow;
+    font-style: italic;
+  }
+
+  /* Apply Google Font to headings inside .first-article only */
+  .first-article h1, .first-article h2 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .second-h2 {
+    color: red;
+    text-transform: uppercase;
+  }
+  
+  .third-article {
+    background-color: lightblue;
+    border: 5px dotted; /* changed from 3px dotted to 5px dashed */
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  .fancy-button {
+    border: 3px solid black;
+    font-size: 20px;
+    background-color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+  }
+
+  .fancy-button:hover {
+    background-color: green; /* turns green when mouse is over */
+  }
+  body {
+    background-color: lightgray;
+  }
+  
