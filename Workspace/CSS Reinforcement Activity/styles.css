@@ -42,4 +42,135 @@
   body {
     background-color: lightgray;
   }
+
+  /* Button Styles */
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid;
+    font-family: 'Roboto', sans-serif;
+    margin: 8px;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border-color: #6c757d;
+  }
+
+  .btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+  }
+
+  .ui-section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  /* Alert Styles */
+  .alert {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+  }
+
+  .alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-color: #ffeaa7;
+  }
+
+  /* Badge Styles */
+  .badge {
+    padding: 4px 8px;
+    margin: 4px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+
+  .badge-new {
+    background-color: #28a745;
+  }
+
+  .badge-info {
+    background-color: #17a2b8;
+  }
+
+  .badge-sale {
+    background-color: #dc3545;
+  }
+
+  /* Card Styles */
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .card-title {
+    color: #343a40;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+  }
+
+  .card-text {
+    color: #6c757d;
+    margin: 0 0 15px 0;
+    font-size: 14px;
+  }
+
+  .card-link {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 15px 0 0;
+    font-size: 14px;
+  }
+
+  .card-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  /* Header Bar Styles */
+  .header-bar {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin: 15px 0;
+  }
+
+  .brand {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
   
