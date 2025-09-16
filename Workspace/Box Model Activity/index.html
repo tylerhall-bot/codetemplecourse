@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .instructions {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    /* All boxes have the same content dimensions */
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: #fff;
+      margin-bottom: 20px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: content-box;
+    }
+    
+    /* Box 1: Small padding, thin border, medium margin */
+    .box1 {
+      padding: 10px;
+      border: 2px solid red;
+      margin: 20px;
+    }
+    
+    /* Box 2: Large padding, medium border, small margin */
+    .box2 {
+      padding: 25px;
+      border: 5px dashed blue;
+      margin: 10px;
+    }
+    
+    /* Box 3: Small padding, thick border, large margin */
+    .box3 {
+      padding: 5px;
+      border: 8px solid green;
+      margin: 40px;
+    }
+    
+    .box-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .box-details {
+      font-size: 12px;
+    }
+    
+    .note {
+      background-color: #e8f4fd;
+      padding: 15px;
+      margin-top: 30px;
+      border-left: 4px solid #007acc;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Box Model Practice</h1>
+  
+  <div class="instructions">
+    <h2>Instructions:</h2>
+    <p>Each box below has the same content size (200px × 100px) but different padding, borders, and margins. Notice how the total space each box occupies differs.</p>
+    <p><strong>To inspect:</strong> Right-click any box → "Inspect Element" → Look for the "Box Model" diagram in developer tools.</p>
+  </div>
+  
+  <div class="box box1">
+    <div class="box-label">Box 1</div>
+    <div class="box-details">
+      Content: 200×100px<br>
+      Padding: 10px<br>
+      Border: 2px solid<br>
+      Margin: 20px
+    </div>
+  </div>
+  
+  <div class="box box2">
+    <div class="box-label">Box 2</div>
+    <div class="box-details">
+      Content: 200×100px<br>
+      Padding: 25px<br>
+      Border: 5px dashed<br>
+      Margin: 10px
+    </div>
+  </div>
+  
+  <div class="box box3">
+    <div class="box-label">Box 3</div>
+    <div class="box-details">
+      Content: 200×100px<br>
+      Padding: 5px<br>
+      Border: 8px solid<br>
+      Margin: 40px
+    </div>
+  </div>
+  
+  <div class="note">
+    <h3>What to observe:</h3>
+    <ul>
+      <li><strong>Total width of Box 1:</strong> 200px (content) + 20px (padding) + 4px (border) = 224px</li>
+      <li><strong>Total width of Box 2:</strong> 200px (content) + 50px (padding) + 10px (border) = 260px</li>
+      <li><strong>Total width of Box 3:</strong> 200px (content) + 10px (padding) + 16px (border) = 226px</li>
+      <li>Margins create additional space around each box but don't affect the element's size</li>
+    </ul>
+  </div>
+</body>
+</html>

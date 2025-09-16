@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Layout Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .card {
+      background-color: white;
+      width: 300px;
+      height: 400px;
+    }
+    
+    /* Card 1 - Standard padding and border */
+    .card1 {
+      padding: 20px;
+      border: 2px solid black;
+      margin: 10px;
+    }
+    
+    /* Card 2 - More padding, thinner border */
+    .card2 {
+      padding: 30px;
+      border: 1px solid gray;
+      margin: 15px;
+    }
+    
+    /* Card 3 - Less padding, thicker border */
+    .card3 {
+      padding: 10px;
+      border: 4px solid darkblue;
+      margin: 5px;
+    }
+    
+    .card img {
+      width: 100%;
+      height: 150px;
+      background-color: #ddd;
+      display: block;
+      object-fit: cover;
+    }
+    
+    /* CSS placeholder rectangles in case images don't load */
+    .image-placeholder {
+      width: 100%;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    
+    .placeholder1 {
+      background-color: #ff6b6b;
+    }
+    
+    .placeholder2 {
+      background-color: #4ecdc4;
+    }
+    
+    .placeholder3 {
+      background-color: #45b7d1;
+    }
+    
+    .card h3 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    
+    .card p {
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .card button {
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+    /* Make responsive - stack cards on smaller screens */
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+    .instructions {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Card Layout</h1>
+  
+  <div class="container">
+    <div class="instructions">
+      <h2>Instructions:</h2>
+      <p>This page shows three cards with different padding, borders, and margins. Right-click on each card and select "Inspect Element" to see how the box model works.</p>
+    </div>
+    
+    <div class="cards">
+      <div class="card card1">
+        <div class="image-placeholder placeholder1">Card 1 Image</div>
+        <h3>Technology</h3>
+        <p>This card has 20px padding, 2px border, and 10px margin. Notice how these values affect the total size.</p>
+        <button>Learn More</button>
+      </div>
+      
+      <div class="card card2">
+        <div class="image-placeholder placeholder2">Card 2 Image</div>
+        <h3>Design</h3>
+        <p>This card has 30px padding, 1px border, and 15px margin. Compare the spacing to the other cards.</p>
+        <button>Read More</button>
+      </div>
+      
+      <div class="card card3">
+        <div class="image-placeholder placeholder3">Card 3 Image</div>
+        <h3>Business</h3>
+        <p>This card has 10px padding, 4px border, and 5px margin. See how the thick border changes the appearance.</p>
+        <button>Discover</button>
+      </div>
+    </div>
+    
+    <div class="instructions">
+      <h2>Developer Tools Practice:</h2>
+      <ol>
+        <li>Right-click on any card above</li>
+        <li>Select "Inspect" or "Inspect Element"</li>
+        <li>Look for the "Box Model" section in the developer tools</li>
+        <li>Compare the different padding, border, and margin values</li>
+        <li>Try changing some values in the CSS and see what happens</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
